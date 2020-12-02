@@ -25,10 +25,7 @@ puzzle2 = () => {
       max = words[1],
       char = words[2],
       str = words[3];
-    if (
-      (str.charAt(min - 1) === char && str.charAt(max - 1) !== char) ||
-      (str.charAt(min - 1) !== char && str.charAt(max - 1) === char)
-    ) {
+    if ((str.charAt(min - 1) === char) !== (str.charAt(max - 1) === char)) {
       count += 1;
     }
   });
